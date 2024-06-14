@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* background-color:black; */
+}
+
+:root {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.4rem
+}
+
+.content {
+    display: grid;
+    grid-template-areas:
+        ". . ."
+        ". logo form"
+        ". logo form"
+        ". . ."
+    ;
+    gap: 17rem;
+
+}
+
+main {
+    grid-area: form;
+}
+
+aside {
+    grid-area: logo;
+}
+
+/* aside h1 {
+    font-family: "Bodoni Moda", serif;
+    font-size: 64px;
+    font-weight: 500;
+    line-height: 75px;
+} */
+
+aside img {
+    width: 70rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+aside h1 span {
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+main {
+    width: 60rem;
+    height: 52rem;
+    border: 0.1rem solid rgb(75, 183, 255);
+    padding: 4.4rem 5.7rem;
+    border-radius: 1.2rem;
+    position: relative;
+}
+
+main h2 {
+    max-width: 43rem;
+    font-size: 3.6rem;
+    font-weight: 500;
+    color: rgb(0, 0, 0);
+}
+
+main h2 span {
+    color: rgb(75, 183, 255);
+}
+
+main .actions {
+    display: flex;
+    flex-flow: column wrap;
+}
+
+main .actions a {
+    border-radius: 1.2rem;
+    text-decoration: none;
+    font-size: 2.4rem;
+    height: 5.5rem;
+    background-color: rgb(75, 183, 255);
+    color: black;
+    margin-top: 5.4rem;
+
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main header {
+    display: flex;
+    align-items: center;
+}
+
+main header i {
+    color: rgb(75, 183, 255);
+    font-size: 2.5rem;
+    gap: 5rem;
+}
+
+main form {
+    margin-top: 1.6rem;
+}
+
+main form label {
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: lowercase;
+    margin-bottom: 1rem;
+    display: block;
+}
+
+main form :is(input, select) {
+    width: 489px;
+    height: 5.5rem;
+    display: block;
+
+    background: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 1.2rem;
+}
+
+main form select {
+    appearance: none;
+}
+main form .select-div{
+    position: relative;
+}
+
+main form .select-div::after{
+    top: 1.2rem;
+    right: 1.2rem;
+    font-size: 2.2rem;
+    content: '/f107';
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 600;
+    position: absolute;
+    z-index: 1;
+    color: rgb(75, 183, 255);
+}
+
+main form .points {
+    position: relative;
+}
+
+main form input+button {
+    position: absolute;
+    right: -3.8rem;
+    top: calc(2.7rem + 2.5rem);
+    background-color: transparent;
+    border: none;
+    color: rgb(75, 183, 255);
+    font-size: 2.4rem;
+    cursor: pointer;
+}
